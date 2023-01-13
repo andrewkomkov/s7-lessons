@@ -1,1 +1,10 @@
 Сохраните сюда результат вывода:
++--------------------+-----------------+
+|               title|           author|
++--------------------+-----------------+
+|           Bad Girls|Jacqueline Wilson|
+|            Catch-22|    Joseph Heller|
+|The Catcher in the Rye|   J. D. Salinger|
+|The Mayor of Casterbridge|     Thomas Hardy|
+|The Wind in the Willows|  Kenneth Grahame|
++--------------------+-----------------+
