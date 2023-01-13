@@ -24,17 +24,17 @@ from datetime import date, datetime
 
 # задаём базовые аргументы
 default_args = {
-    'start_date': datetime(2022, 4, 1),
+    'start_date': datetime(2022, 3, 25),
     'end_date' : datetime(2022, 5, 10),
     'catchup' : True,
     'owner': 'airflow'
 }
 
 # вызываем DAG
-dag = DAG("ods",
+dag = DAG("ods___",
           schedule_interval='@daily',
           default_args=default_args,
-          max_active_runs=1
+          max_active_runs=2
 
          )
 
