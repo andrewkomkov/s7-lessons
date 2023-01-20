@@ -34,15 +34,15 @@ default_args = {
 dag = DAG("ods",
           schedule_interval='@daily',
           default_args=default_args,
-          max_active_runs=1
+          max_active_runs=3
 
          )
 
-# объявляем задачу с Bash-командой, которая распечатывает дату
+# объявляем задачу с Bash-командой
 t1 = BashOperator(
-    task_id='print_date',
-    bash_command='spark-submit --master yarn --deploy-mode cluster /lessons/dags/partition.py {{ ds }} /user/master/data/events /user/andrew_0/data/events',
-        retries=3,
+    task_id='Task',
+    bash_command='spark-submit --master yarn --deploy-mode cluster /lessons/dags/partition.py {{ ds }} /user/master/data/events /user/andrew0/data/events',
+        retries=0,
         dag=dag
 )
 
